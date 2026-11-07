@@ -176,3 +176,4 @@ franky-bot/
 ├── vercel.json          # cron tiap 5 menit (butuh Pro)
 └── .env.example
 ```
+ 
