@@ -1,0 +1,1 @@
+{"crons":[{"path":"/api/scan?source=cron","schedule":"0 0 * * *"}],"functions":{"api/scan.js":{"maxDuration":60}}}
