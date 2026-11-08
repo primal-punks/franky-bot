@@ -58,7 +58,7 @@
   <img src="/logo.png" alt="Logo Franky Bot" style="width:64px;height:64px;border-radius:16px;object-fit:cover;border:1px solid #262c38" />
   <div>
     <h1>Franky Check 🔍</h1>
-    <p class="sub">Pemeriksa koin meme sebelum beli — Solana · BNB Chain · Base</p>
+    <p class="sub">Pemeriksa koin meme sebelum beli — Solana · BNB Chain · Base · Elysium · Robinhood · HyperEVM · Ethereum</p>
   </div>
   <a href="/index.html" style="margin-left:auto">← Kembali ke Bot</a>
 </div>
@@ -69,6 +69,10 @@
     <button class="tab chainpill active" data-chain="bsc" onclick="setChain('bsc')">BNB Chain</button>
     <button class="tab chainpill" data-chain="solana" onclick="setChain('solana')">Solana</button>
     <button class="tab chainpill" data-chain="base" onclick="setChain('base')">Base</button>
+    <button class="tab chainpill" data-chain="elysium" onclick="setChain('elysium')">Elysium</button>
+    <button class="tab chainpill" data-chain="robinhood" onclick="setChain('robinhood')">Robinhood</button>
+    <button class="tab chainpill" data-chain="hyperliquid" onclick="setChain('hyperliquid')">HyperEVM</button>
+    <button class="tab chainpill" data-chain="ethereum" onclick="setChain('ethereum')">Ethereum</button>
   </div>
   <div class="row">
     <input id="ca" placeholder="Tempel alamat kontrak (0x… atau Solana)" />
@@ -116,7 +120,7 @@
 
 <script>
 const $ = id => document.getElementById(id);
-const CHAIN_LABEL = { solana: 'Solana', bsc: 'BNB Chain', base: 'Base' };
+const CHAIN_LABEL = { solana: 'Solana', bsc: 'BNB Chain', base: 'Base', elysium: 'Elysium', robinhood: 'Robinhood', hyperliquid: 'HyperEVM', ethereum: 'Ethereum' };
 let chain = 'bsc';
 let kind = 'trending';
 
