@@ -9,7 +9,7 @@ export default async function handler(req, res) {
   const chain = String(req.query.chain || 'solana').toLowerCase();
   const kind = String(req.query.kind || 'trending').toLowerCase();
   const meta = CHAINS[chain];
-  if (!meta) return res.status(400).json({ ok: false, error: 'chain tidak dikenal (solana / bsc / base)' });
+  if (!meta) return res.status(400).json({ ok: false, error: 'chain tidak dikenal (solana / bsc / base / elysium / robinhood / hyperevm / ethereum)' });
   if (kind !== 'trending' && kind !== 'new') {
     return res.status(400).json({ ok: false, error: 'kind harus trending atau new' });
   }
